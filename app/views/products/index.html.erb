@@ -1,0 +1,8 @@
+<h3>Add an item</h3>
+
+<%= form_tag new_item_path do %>
+    <label>product:</label><br>
+    <input type="text" id="product_name" name="product[name]"><br>
+    <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+    <input type="submit" value="Submit Post">
+  <% end %>
